@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #0e0f21, #1a1d3f);
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ff6f91;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4757;
+}
+
+.hero {
+    text-align: center;
+    margin: auto;
+    padding: 100px 20px;
+    background-image: url('space_background.jpg'); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1; /* Ensure hero section is above other elements */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 2; /* Make sure overlay is above the background but below text */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative; /* Ensure it's above the overlay */
+    z-index: 3;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    position: relative; /* Ensure it's above the overlay */
+    z-index: 3;
+}
+
+.button {
+    background-color: #ff6f91;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* Ensure it's above the overlay */
+    z-index: 3; /* Ensure button is above the overlay */
+}
+
+.button:hover {
+    background-color: #ff4757;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact {
+    text-align: center;
+    margin: auto;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Slight white overlay for contrast */
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width for better layout */
+    margin-top: 50px; /* Space above the contact section */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: left; /* Align the text to the left */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide overflow if the text is too long */
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 10px; /* Reduced space below each form group */
+}
+
+.form-group label {
+    flex: 1; /* Take 1 part of the available space */
+    text-align: left; /* Align label text to the left */
+    margin-right: 5px; /* Space between label and input, reduced */
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 2; /* Take 2 parts of the available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button {
+    background-color: #ff6f91;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff4757;
+}

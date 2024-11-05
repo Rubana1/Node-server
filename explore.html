@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file if needed -->
+    <title>Explore the Cosmos</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('cosmic.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the whole screen */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f91; /* Hover color */
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .explore-content {
+            max-width: 600px; /* Maximum width for content */
+        }
+
+        .explore-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+
+        .explore-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+
+        .button {
+            background-color: #ff4757;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #ff6f91; /* Hover color */
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Cosmos</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="explore-content">
+            <h2>Adventure Awaits!</h2>
+            <p>Get ready to book your cosmic adventure and explore the wonders of the universe!</p>
+            <a href="booking.html" class="button">Start Your Booking</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dreamy Cosmic Adventure. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file if needed -->
+    <title>Gallery - Dreamy Cosmic Adventure</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 200px; /* Set a fixed height for all gallery items */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%; /* Make sure the image covers the entire item */
+            object-fit: cover; /* Crop the image to maintain aspect ratio */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #fff;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dreamy Cosmic Adventure</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Cosmic Gallery</h2>
+        <p>Click on any image to learn more about the wonders of the cosmos!</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="nebula.png" alt="Nebula">
+                <div class="overlay">Nebula</div>
+            </div>
+            <div class="gallery-item">
+                <img src="galaxy.png" alt="Galaxy">
+                <div class="overlay">Galaxy</div>
+            </div>
+            <div class="gallery-item">
+                <img src="planet.png" alt="Planet">
+                <div class="overlay">Planet</div>
+            </div>
+            <div class="gallery-item">
+                <img src="star.png" alt="Star Cluster">
+                <div class="overlay">Star Cluster</div>
+            </div>
+            <div class="gallery-item">
+                <img src="comet.png" alt="Comet">
+                <div class="overlay">Comet</div>
+            </div>
+            <div class="gallery-item">
+                <img src="asteroid.png" alt="Comet">
+                <div class="overlay">Asteroid</div>
+            </div>
+            <div class="gallery-item">
+                <img src="blackhole.png" alt="Comet">
+                <div class="overlay">Blackhole</div>
+            </div>
+            <div class="gallery-item">
+                <img src="satellite.png" alt="Comet">
+                <div class="overlay">Satellite</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dreamy Cosmic Adventure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
